@@ -40,7 +40,7 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./buiild http://http://react-app-bootcamp.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./buiild http://http://react-app-bootcamp2020.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
     
     
 

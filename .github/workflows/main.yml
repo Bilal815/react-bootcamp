@@ -40,5 +40,5 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./buiild react-app-bootcamp.surge.sh/ --token 7126617a14e94f20c5c4b23e8f9a28d2
+      run: surge ./build react-app-bootcamp.surge.sh/ --token 7126617a14e94f20c5c4b23e8f9a28d2
     

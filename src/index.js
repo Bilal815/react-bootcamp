@@ -6,7 +6,8 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dinner />
+    <Dinner dishName="Chicken Karahi"/>
+    <Dinner dishName="Chicken Biryani"/>
   </React.StrictMode>,
   document.getElementById('root')
 );

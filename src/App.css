@@ -12,6 +12,7 @@
 }
 
 .App ul {
+    margin-top: 600px;
     margin-left: -245px;
     margin-top: 85px;
     list-style: none;

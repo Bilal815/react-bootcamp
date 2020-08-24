@@ -3,9 +3,7 @@ import Shoes from './../shoes.json';
 import { Link } from 'react-router-dom';
 import './Product.css';
 
-
 function Product() {
-
     return (
         <div>
             <h1>Welcome to Product</h1>

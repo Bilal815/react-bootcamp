@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+.shoes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.shoes>a {
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #463636;
+    justify-content: space-around;
+    border: 1px solid #463636;
+    margin: 10px;
+    padding-top: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: black;
+}
+
+.shoes>a:hover {
+    background-color: lightgray;
+}
+
+.shoes>a img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

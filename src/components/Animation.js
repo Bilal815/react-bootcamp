@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from 'react';
-//import RouteConfig from './Routes.js';
 import useWebAnimations, { rubberBand } from "@wellyshen/use-web-animations";
 import './App.css';
 
-function App() {
+function Animation() {
 	const { ref, playState, getAnimation } = useWebAnimations({
 		keyframes: [{
 		  transform: "translate(0, 0)"
@@ -28,7 +27,6 @@ function App() {
 
 	return (
 		<div>
-			{/*<RouteConfig />*/}
 			<div className="target" ref={ref} type="text">
 				Hello World!
 			</div>
@@ -40,4 +38,4 @@ function App() {
 	)
 }
 
-export default App
+export default Animation

@@ -18,3 +18,12 @@
     list-style: none;
     background-color: yellow;
 }
+
+.target {
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}

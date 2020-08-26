@@ -8,7 +8,7 @@ import About from './components/About';
 import ProductItem from './components/ProductItem';
 import NavRoute from './components/navroute';
 
-export default function RoutesConfig() {
+export default function RouteConfig() {
     return (
         <div>
             <Router>

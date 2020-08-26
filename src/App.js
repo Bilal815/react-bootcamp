@@ -1,10 +1,10 @@
 import React from 'react';
-import RoutesConfig from './Routes.js';
+import RouteConfig from './Routes.js';
 
 function App() {
 	return (
 		<div>
-			<RoutesConfig />
+			<RouteConfig />
 		</div>
 	)
 }

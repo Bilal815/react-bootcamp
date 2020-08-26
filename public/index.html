@@ -3,11 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -44,10 +42,27 @@
         border: 1px solid darkcyan
     }
 </style>-->
+<style>
+    #sky {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    body {
+        background: rgb(237, 247, 250);
+    }
+    
+    .runway {
+        height: 150px;
+        background: black;
+        position: relative;
+        top: 570px;
+    }
+</style>
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    
+
     <!--<div class="box">
         <h2>Warning!</h2>
     </div>
@@ -74,6 +89,26 @@
     </script>-->
 
     <div id="root"></div>
+
+    <div class="main" onload="sky()">
+        <h2>Animation Web App</h2>
+        <div id="sky">
+            <div class="cloud">
+                <img alt="Mist PNG Clipart PNG, SVG Clip art for Web - Download Clip Art ..." class="n3VNCb" src="https://www.downloadclipart.net/large/mist-png-clipart.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 417.602px; height: 334px; margin: 0px;">
+                <img alt="Mist PNG Clipart PNG, SVG Clip art for Web - Download Clip Art ..." class="n3VNCb" src="https://www.downloadclipart.net/large/mist-png-clipart.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 417.602px; height: 334px; margin: 0px;">
+            </div>
+        </div>
+
+        <div class="crow">
+            <img alt="Top Crow Gif Stickers for Android &amp; iOS | Gfycat" class="n3VNCb" src="https://thumbs.gfycat.com/CooperativeWillingAngwantibo-max-1mb.gif" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 56.7747px; height: 56.7px; margin: 0px;">
+        </div>
+
+        <div class="plane">
+            <img alt="Dear Krak W Cartoon Airplane - LowGif" class="n3VNCb" src="https://cdn.lowgif.com/small/97cdcdf4aa4e3b60-dear-krak-w.gif" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 453px; height: 320px; margin: 0px;">
+        </div>
+    </div>
+
+    <div class="runway"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -85,5 +120,40 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<script>
+    function sky() {
+        var sky = document.getElementsByClassName("sky");
+        sky.animate([{
+            transform: 'translate(-100%, 0)'
+        }, {
+            transform: 'translate(100%, 1000px)'
+        }], {
+            duration: 5000,
+            iterations: Infinity,
+            playbackRate: -4
+        });
+    }
+
+
+
+    function plane() {
+        var plane = document.getElementsByClassName("plane");
+        plane.animate([{
+            transform: 'translate(0, -400px)'
+        }, {
+            transform: 'translate(600px, -200px)'
+        }, {
+            transform: 'translate(800px, 0px)'
+        }, {
+            transform: 'translate(1000px, 200px)'
+        }, {
+            transform: 'translate(1200px, 300px)'
+        }, {
+            transform: 'translate(100px, 300px)'
+        }], {
+            duration: 10000
+        });
+    }
+</script>
 
 </html>
